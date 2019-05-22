@@ -2,6 +2,7 @@
 #include <string>
 #include "json/json.h"
 #define XONGFUNC(name)Java_com_zhao_myndkapplication_##name
+
 extern "C" JNIEXPORT jstring JNICALL
 XONGFUNC(JNIUtils_stringFromJNI)(
         JNIEnv *env,
@@ -58,4 +59,5 @@ XONGFUNC(JNIUtils_parseJsonSo)(JNIEnv *env, jobject,
 
     return env->NewStringUTF(out_str.c_str());
 }
+
 

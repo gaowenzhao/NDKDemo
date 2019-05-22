@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.4.1)
-
-
+#jniapi
+add_library(
+        jniapi
+        SHARED
+        jniapi-lib.cpp
+        )
+# nativetest
 add_library( # Sets the name of the library.
         nativetest
         SHARED
@@ -30,7 +35,6 @@ target_include_directories(
         # native_so_jsoncpp需要的头文件
         ${export_dir}/libsojsoncpp/include
 )
-
 
 # 链接库
 target_link_libraries( # Specifies the target library.

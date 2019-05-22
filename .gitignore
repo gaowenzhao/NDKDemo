@@ -45,3 +45,5 @@ captures/
 */.gradle/
 */apk/
 */apk/*
+.externalNativeBuild/
+*/.externalNativeBuild/
