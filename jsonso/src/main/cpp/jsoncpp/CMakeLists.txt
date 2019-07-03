@@ -44,5 +44,5 @@ set_target_properties(
 #        )
 
 add_custom_command(
-       TARGET jsoncpp POST_BUILD
+        TARGET jsoncpp POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/src/json" "${export_dir}/libsojsoncpp/include/json/")

@@ -1,1 +1,1 @@
-include ':app', ':jsonso'
+include ':app', ':jsonso', ':gifapplication'
