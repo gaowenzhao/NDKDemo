@@ -370,9 +370,11 @@ static GifInfo *createGifInfoFromFile(JNIEnv *env, FILE *file, const long long s
 	return createGifInfo(&descriptor, env);
 }
 
-jint getWidth(GifInfo *gifInfo){
-	return  gifInfo->originalWidth;
+jint getWidth(jlong gifInfo){
+    GifInfo *info = (GifInfo *) (intptr_t) gifInfo;
+	return  info->originalWidth;
 }
-jint getHeight(GifInfo *gifInfo){
-	return  gifInfo->originalHeight;
+jint getHeight(jlong gifInfo){
+    GifInfo *info = (GifInfo *) (intptr_t) gifInfo;
+	return  info->originalHeight;
 }

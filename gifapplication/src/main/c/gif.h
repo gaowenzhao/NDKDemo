@@ -222,6 +222,6 @@ static GifInfo *createGifInfoFromFile(JNIEnv *env, FILE *file, long long sourceL
 
 jlong openFile(JNIEnv *env, jstring jfname);
 jlong renderFrame(JNIEnv *env, jlong gifInfo, jobject jbitmap);
-jint getWidth(GifInfo *gifInfo);
-jint getHeight(GifInfo *gifInfo);
+jint getWidth(jlong gifInfo);
+jint getHeight(jlong gifInfo);
 
